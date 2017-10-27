@@ -13,17 +13,17 @@ lalu lakukan konfigurasi fail2ban dengan mengedit file :
 
 Pada konfigurasi fail2ban, kita mengubah setingan pada **max retry** / maksimal gagal login dari 5 menjadi 2, dan **bantime** dari 60 menit menjadi 1 menit. 
 
-![SS 1](https://github.com/fandyaditya/PKSJ/tree/master/Tugas%201/Gambar/setting-fail2ban.PNG "Setting pada maxretry dan bantime")
+![SS 1](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%201/Gambar/setting-fail2ban.PNG "Setting pada maxretry dan bantime")
 
 Setelah itu atur ip dari masing – masing virtual machine pada file :
 > /etc/network/interfaces
 
-![SS 2](https://github.com/fandyaditya/PKSJ/tree/master/Tugas%201/Gambar/config-ip-server.PNG "Setting IP pada ubuntu server")
+![SS 2](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%201/Gambar/config-ip-server.PNG "Setting IP pada ubuntu server")
 
-![SS 3](https://github.com/fandyaditya/PKSJ/tree/master/Tugas%201/Gambar/config-ip-kali.PNG "Setting IP pada kali linux")
+![SS 3](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%201/Gambar/config-ip-kali.PNG "Setting IP pada kali linux")
 
 Jangan lupa lakukan restart
-> ```Service networking restart```
+> ```service networking restart```
 
 Setelah disetting, ubuntu server siap untuk diserang.
 
@@ -32,7 +32,7 @@ Setelah disetting, ubuntu server siap untuk diserang.
 
 Tools penyerangan sama menggunakan nCrack, Medusa dan Hydra. Berikut hasil darin penyerangan tersebut.
 
-![SS 4](https://github.com/fandyaditya/PKSJ/tree/master/Tugas%201/Gambar/attack-hydra.PNG "Penyerangan hydra dengan fail2ban terinstall")
+![SS 4](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%201/Gambar/attack-hydra.PNG "Penyerangan hydra dengan fail2ban terinstall")
 
 ![SS 5](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%201/Gambar/attack-medusa.PNG "Penyerangan medusa dan ncrack dengan fail2ban terinstall")
 
