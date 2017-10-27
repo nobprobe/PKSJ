@@ -146,5 +146,5 @@ Bisa dilihat penyerang gagal mendapatkan password karena ip nya telah diblokir t
 
 #### Kesimpulan
 
-Serangan brute force walaupun membutuhkan waktu yang lama, password yang rumit sekalipun pasti akan didapatkan. Namun dengan menggunakan fail2ban, percobaan brute force akan gagal karena adanya pembatasan percobaan oleh fail2ban. Dengan fail2ban serangan brute force dapat terpenuhi.
+Serangan brute force walaupun membutuhkan waktu yang lama, password yang rumit sekalipun pasti akan didapatkan. Namun dengan menggunakan fail2ban, percobaan brute force akan gagal karena adanya pembatasan percobaan oleh fail2ban. Dengan fail2ban serangan brute force dapat dicegah.
 
