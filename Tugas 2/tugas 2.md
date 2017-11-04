@@ -107,9 +107,9 @@
     ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%202/Gambar/Install%20LAMP%20dan%20wordpress%20di%20ubuntu/10-wp.png)
 
 ### Instalasi Plugin
-   1. Masuk lalu ke menu Plugin -> Add New
+   1. Login
       ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%202/Gambar/Install%20Video%20Player%20wordpress/1-plugin.png)
-    2. Pilih file yang akan di upload
+    2. Masuk ke menu Plugin -> Add New
       ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%202/Gambar/Install%20Video%20Player%20wordpress/2-plugin.png)
     3. Upload dan klik Install Now
       ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%202/Gambar/Install%20Video%20Player%20wordpress/3-plugin.png)
