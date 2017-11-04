@@ -108,17 +108,17 @@
 
 ### Instalasi Plugin
    1. Masuk ke menu Plugin -> Add New
-      ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%202/Gambar/Install%20Video%20Player%20wordpress/Screenshot%20(53).PNG)
+      ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%202/Gambar/Install%20Video%20Player%20wordpress/1-plugin.png)
     2. Klik tombol Upload Plugin
-      ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%202/Gambar/Install%20Video%20Player%20wordpress/Screenshot%20(54).PNG)
+      ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%202/Gambar/Install%20Video%20Player%20wordpress/2-plugin.png)
     3. Pilih file plugin, lalu klik Install Now
-      ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%202/Gambar/Install%20Video%20Player%20wordpress/Screenshot%20(55).PNG)
-      ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%202/Gambar/Install%20LeagueManager%20di%20wordpress/Screenshot%20(58).PNG)
+      ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%202/Gambar/Install%20Video%20Player%20wordpress/3-plugin.png)
+      ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%202/Gambar/Install%20LeagueManager%20di%20wordpress/3.1-plugin.png)
     4. Tunggu instalasi selesai
-      ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%202/Gambar/Install%20LeagueManager%20di%20wordpress/Screenshot%20(59).PNG)
+      ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%202/Gambar/Install%20Video%20Player%20wordpress/4-plugin.png)
     5. Selesai!!!
-      ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%202/Gambar/Install%20Video%20Player%20wordpress/Screenshot%20(57).PNG)
-      ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%202/Gambar/Install%20LeagueManager%20di%20wordpress/Screenshot%20(60).PNG)
+      ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%202/Gambar/Install%20Video%20Player%20wordpress/5-plugin.png)
+      ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%202/Gambar/Install%20LeagueManager%20di%20wordpress/5.1-plugin.png)
  
 ### Uji Penetrasi
    * #### WPScan
