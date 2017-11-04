@@ -98,12 +98,13 @@
   6. Buka mysql, lalu buat database dengan nama wordpress
       ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%202/Gambar/Install%20LAMP%20dan%20wordpress%20di%20ubuntu/6-wp.PNG)
   7. Buka halaman depan dari Wordpress, lalu akan ada inisialisasi
-      ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%202/Gambar/Install%20LAMP%20dan%20wordpress%20di%20ubuntu/Screenshot%20(49).PNG)
+      ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%202/Gambar/Install%20LAMP%20dan%20wordpress%20di%20ubuntu/7-wp.png)
   8. Isi konfigurasi database dengan yang telah dibuat sebelumnya
-      ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%202/Gambar/Install%20LAMP%20dan%20wordpress%20di%20ubuntu/Screenshot%20(50).PNG)
+      ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%202/Gambar/Install%20LAMP%20dan%20wordpress%20di%20ubuntu/8-wp.png)
   9. Set konfigurasi website
-      ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%202/Gambar/Install%20LAMP%20dan%20wordpress%20di%20ubuntu/Screenshot%20(51).PNG)
+      ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%202/Gambar/Install%20LAMP%20dan%20wordpress%20di%20ubuntu/9-wp.png)
   10. Selesai!!!
+    ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%202/Gambar/Install%20LAMP%20dan%20wordpress%20di%20ubuntu/10-wp.png)
 
 ### Instalasi Plugin
    1. Masuk ke menu Plugin -> Add New
