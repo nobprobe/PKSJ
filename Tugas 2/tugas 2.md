@@ -107,14 +107,14 @@
     ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%202/Gambar/Install%20LAMP%20dan%20wordpress%20di%20ubuntu/10-wp.png)
 
 ### Instalasi Plugin
-   1. Masuk ke menu Plugin -> Add New
+   1. Masuk lalu ke menu Plugin -> Add New
       ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%202/Gambar/Install%20Video%20Player%20wordpress/1-plugin.png)
-    2. Klik tombol Upload Plugin
+    2. Pilih file yang akan di upload
       ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%202/Gambar/Install%20Video%20Player%20wordpress/2-plugin.png)
-    3. Pilih file plugin, lalu klik Install Now
+    3. Upload dan klik Install Now
       ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%202/Gambar/Install%20Video%20Player%20wordpress/3-plugin.png)
       ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%202/Gambar/Install%20LeagueManager%20di%20wordpress/3.1-plugin.png)
-    4. Tunggu instalasi selesai
+    4. Tunggu instalasi selesai, lalu aktivasi
       ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%202/Gambar/Install%20Video%20Player%20wordpress/4-plugin.png)
     5. Selesai!!!
       ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%202/Gambar/Install%20Video%20Player%20wordpress/5-plugin.png)
